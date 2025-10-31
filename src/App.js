@@ -65,11 +65,12 @@ function App() {
               style={{ padding: "6px 8px", borderRadius: "4px", border: "1px solid #ccc" }}
             >
               <option value="">Select grade</option>
-              <option value="Class 6">Class 6</option>
-              <option value="Class 7">Class 7</option>
-              <option value="Class 8">Class 8</option>
-              <option value="Class 9">Class 9</option>
-              <option value="Class 10">Class 10</option>
+              <option value="5">Class 5</option>
+              <option value="6">Class 6</option>
+              <option value="7">Class 7</option>
+              <option value="8">Class 8</option>
+              <option value="9">Class 9</option>
+              <option value="10">Class 10</option>
             </select>
           </div>
         </form>
@@ -99,7 +100,7 @@ function App() {
                   <tr key={index}>
                     <td style={{ padding: "8px", borderBottom: "1px solid #ddd" }}>{student.name}</td>
                     <td style={{ padding: "8px", borderBottom: "1px solid #ddd" }}>{student.age}</td>
-                    <td style={{ padding: "8px", borderBottom: "1px solid #ddd" }}>{student.grade}</td>
+                    <td style={{ padding: "8px", borderBottom: "1px solid #ddd" }}>{`Class ${student.grade}`}</td>
                     <td style={{ padding: "8px", borderBottom: "1px solid #ddd" }}>
                       <button
                         onClick={() => handleRemove(index)}
